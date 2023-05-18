@@ -1,0 +1,23 @@
+/* Chart 1 */
+/* If the bar has the start point lower than the end point, it will have green color */
+#chart1Canada, #chart1Australia
+{
+    height: 100vh;
+}
+
+.positive
+{
+    fill: #44d362;
+    color: #44d362;
+}
+
+.negative
+{
+    fill: #ff2020;
+    color: #ff2020;
+}
+
+#subchart1
+{
+    height: 500px; /* Set the desired height for the pie chart */
+}
