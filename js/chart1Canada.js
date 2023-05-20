@@ -7,10 +7,15 @@ d3.csv("./csv/CanadaData1.csv").then(function(data)
 // Draw waterfall chart
 function waterfallChart(data)
 {
+    if (document.getElementById('AustraliaChart1'))
+    {
+        document.getElementById('AustraliaChart1').remove();
+    }
+
     // Set up the dimensions of the chart
     const margin = {top: 70, right: 30, bottom: 60, left: 80}
     const width = document.querySelector('.col-4').offsetWidth  - margin.left - margin.right;
-    const height = document.querySelector('#chart1Canada').offsetHeight * 0.8 - margin.top - margin.bottom;
+    const height = document.querySelector('#chart1').offsetHeight * 0.8 - margin.top - margin.bottom;
 
     // Calculate the starting and ending values for each data point
     let initial = 0;
@@ -43,12 +48,13 @@ function waterfallChart(data)
 
     // Create the SVG element and set its dimensions
     const svg = d3
-    .select("#chart1Canada")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        .select("#chart1")
+        .append("svg")
+        .attr("id", "CanadaChart1")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
     // Add the chart title
     svg.append("text")
@@ -236,7 +242,7 @@ function pieChart(data, year)
     const radius = Math.min(width, height) / 2;
 
     // Create the SVG element for pie chart
-    const pieSvg = d3.select("#subchart1Canada")
+    const pieSvg = d3.select("#subchart1")
         .append("svg")
         .attr("class","subChart")
         .attr("width", width)

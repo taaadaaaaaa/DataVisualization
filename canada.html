@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assessment</title>
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/chart1.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="row">
+        <nav>
+            <a href="canada.html">Canada</a>
+            <a href="australia.html">Australia</a>
+            <div id="indicator"></div>
+        </nav>
+    </div>
+    <!-- Main body -->
+    <div class="row">
+        <main>
+            <!-- Hero Section -->
+            <div class="row hero-component">
+                <!-- Hero Section Header -->
+                <div class="col-5">
+                    <h2 id="illustration-header">Immigration</h2>
+                    <p id="illustration-sub-header">Why people immigrate to <span>Canada</span> and <span>Australia</span>?
+                    The relationship between immigration and host country economic?</p>
+                    <!-- Button section link to chart-->
+                    <div class="row button">
+                        <button id="button1" type="button"><a href="#chart1-container" onclick.prevent="">Discover why?</a></button>
+                        <button id="button2" type="button"><a href="#chart2-container">Impact</a></button>
+                    </div>
+                </div>
+                <!-- Hero Section Illustration -->
+                <div class="col-7 illustration">
+                    <img src="illustration.svg" id="illustration" alt="illustration">
+                </div>
+            </div>
+            <hr>
+            <!-- Visualization 1 -->
+            <div id="chart1-container">
+                <!-- Title of the Canada Chart 1 -->
+                <div class="row">
+                    <div class="row visualisation-title">
+                        <h3><span>Visualisation 1</span> - Amount of Immigrants in Canada from 2016 to 2021</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Visualization 1: Chart (Waterfall)-->
+                    <div class="col-4">
+                        <div id="chart1"></div>
+                    </div>
+                    <!-- Visualization 1: Chart (Sub-chart) -->
+                    <div class="col-3">
+                        <div id="subchart1"></div>
+                    </div>
+                    <!-- Visualization 1: Analysis -->
+                    <div class="col-5">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Visualization 2 -->
+            <!-- Visualization 2: Analysis -->
+        </main>
+    </div>
+
+    <!-- Attach the chart 1 (Canada) to the website -->
+    <script src="js/chart1Canada.js"></script>
+</body>
+</html>

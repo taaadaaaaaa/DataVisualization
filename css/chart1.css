@@ -1,6 +1,6 @@
 /* Chart 1 */
 /* If the bar has the start point lower than the end point, it will have green color */
-#chart1Canada, #chart1Australia
+#chart1
 {
     height: 100vh;
 }

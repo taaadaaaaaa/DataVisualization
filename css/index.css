@@ -20,7 +20,7 @@ body {
 nav
 {
     background-color: #292929;
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     width: 100%;
@@ -28,6 +28,7 @@ nav
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 5px;
+    z-index: 9999;
 }
 
 nav a
@@ -273,18 +274,9 @@ main
 
 /* Chart Section - Begin */
 /* Chart Section - Chart 1 - Begin*/
-#chart1-container-australia, #chart1-container-canada
+#chart1-container
 {
     width: 100%;
-}
-
-#chart1-container-australia
-{
-    display: none;
-}
-#chart1Australia, #chart1Canada
-{
-    display: inline-block;
 }
 
 .visualisation-title
