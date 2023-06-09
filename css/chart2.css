@@ -1,0 +1,32 @@
+/* Chart 2 */
+#chart2, #subchart2
+{
+    height: 100vh;
+}
+
+.circle
+{
+    fill: none;
+    pointer-events: all;
+}
+
+#overlay
+{
+    pointer-events: all;
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    z-index: 1;
+}
+
+.tooltip
+{
+    position: absolute;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: none;
+    opacity: .75;
+}
+

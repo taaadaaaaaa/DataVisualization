@@ -1,0 +1,24 @@
+/* Chart 1 */
+/* If the bar has the start point lower than the end point, it will have green color */
+#chart1, #subchart1
+{
+    height: 100vh;
+}
+
+.positive
+{
+    fill: #44d362;
+    color: #44d362;
+}
+
+.negative
+{
+    fill: #ff2020;
+    color: #ff2020;
+}
+
+.highlighted
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
